@@ -1,0 +1,1996 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>SEF Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="11">
+            <img src="https://sefteach01.qut.edu.au/jira/images/icon-jira-logo.png" width="57" height="30" border="0" alt="SEF Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            <a href="https://sefteach01.qut.edu.au/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project%3D%22IFB299+098%22">SEF Jira</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            Displaying <strong>64</strong> issues at <strong>20/Aug/15 12:59 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                            Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                            Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                            Created
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                            Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                            Due Date
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow13386" rel="13386" data-issuekey="NINEIG-99" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-99" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-99">NINEIG-99</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-5</span>
+                Allow user to delete their media from this page
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 12:01 PM </td>
+                                            <td class="updated"> 20/Aug/15 12:01 PM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13385" rel="13385" data-issuekey="NINEIG-98" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-98" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-98">NINEIG-98</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-5</span>
+                Create sorting method on page
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 12:00 PM </td>
+                                            <td class="updated"> 20/Aug/15 12:00 PM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13384" rel="13384" data-issuekey="NINEIG-97" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-97" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-97">NINEIG-97</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-5</span>
+                Create a user information page to view details on vault content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 12:00 PM </td>
+                                            <td class="updated"> 20/Aug/15 12:00 PM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13383" rel="13383" data-issuekey="NINEIG-96" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-96" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-96">NINEIG-96</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-11</span>
+                Create admin login page to filter and delete users
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 12:00 PM </td>
+                                            <td class="updated"> 20/Aug/15 12:00 PM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13382" rel="13382" data-issuekey="NINEIG-95" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-95" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-95">NINEIG-95</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-55</span>
+                Create pages to house the content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:59 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:59 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13381" rel="13381" data-issuekey="NINEIG-94" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-94" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-94">NINEIG-94</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-55</span>
+                Create the content for these pages
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:59 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:59 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13380" rel="13380" data-issuekey="NINEIG-93" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-93" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-93">NINEIG-93</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-55</span>
+                Research other sites’ Ts&amp;Cs and privacy policies and find what applies
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:59 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:59 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13379" rel="13379" data-issuekey="NINEIG-92" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-92" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-92">NINEIG-92</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-3</span>
+                Implement a method to stream to whatever device the user is on for
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:59 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:59 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13378" rel="13378" data-issuekey="NINEIG-91" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-91" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-91">NINEIG-91</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-54</span>
+                Only allow access to content pages if user is signed in
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13377" rel="13377" data-issuekey="NINEIG-90" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-90" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-90">NINEIG-90</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-3</span>
+                Find and display content on cloud from stored information in database
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13376" rel="13376" data-issuekey="NINEIG-89" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-89" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-89">NINEIG-89</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-54</span>
+                Ensure users can’t double up with usernames and passwords are at least 8 characters
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13375" rel="13375" data-issuekey="NINEIG-88" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-88" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-88">NINEIG-88</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-54</span>
+                Create login and registration pages
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13374" rel="13374" data-issuekey="NINEIG-87" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-87" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-87">NINEIG-87</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-54</span>
+                Allow for hashed passwords
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13373" rel="13373" data-issuekey="NINEIG-86" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-86" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-86">NINEIG-86</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-54</span>
+                Create user table in database
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13372" rel="13372" data-issuekey="NINEIG-85" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-85" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-85">NINEIG-85</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-13</span>
+                Create solution for bookmarking other media on timecodes
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13371" rel="13371" data-issuekey="NINEIG-84" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-84" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-84">NINEIG-84</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-13</span>
+                Create solution for keeping bookmarks on streamed ebooks
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13370" rel="13370" data-issuekey="NINEIG-83" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-83" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-83">NINEIG-83</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-13</span>
+                Create table for bookmarking information and link to other tables
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:58 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:58 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13369" rel="13369" data-issuekey="NINEIG-82" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-82" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-82">NINEIG-82</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-7</span>
+                Find a way to start download from link to device
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:57 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:57 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13368" rel="13368" data-issuekey="NINEIG-81" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-81" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-81">NINEIG-81</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-7</span>
+                Create method to find information in database as to media’s information and location
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:57 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:57 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13367" rel="13367" data-issuekey="NINEIG-80" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-80" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-80">NINEIG-80</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-12</span>
+                Add a preference menu to implement minor changes to how their vault operates
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:56 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:56 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13366" rel="13366" data-issuekey="NINEIG-79" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-79" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-79">NINEIG-79</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-2</span>
+                Implement solution to store uploaded media directly to cloud
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:56 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:56 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13365" rel="13365" data-issuekey="NINEIG-78" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-78" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-78">NINEIG-78</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-10</span>
+                Allow for items to play one after another
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:56 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:56 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13364" rel="13364" data-issuekey="NINEIG-77" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-77" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-77">NINEIG-77</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-2</span>
+                Allow user to manually enter meta information when uploading
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:55 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13363" rel="13363" data-issuekey="NINEIG-76" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-76" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-76">NINEIG-76</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-10</span>
+                Create a filter for genres/playlists on display page for content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:55 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13362" rel="13362" data-issuekey="NINEIG-75" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-75" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-75">NINEIG-75</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-2</span>
+                Create table in database to store media’s information and location
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:55 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13361" rel="13361" data-issuekey="NINEIG-74" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-74" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-74">NINEIG-74</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-10</span>
+                Create a table to store playlist information and link to other tables
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:55 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13360" rel="13360" data-issuekey="NINEIG-73" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-73" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-73">NINEIG-73</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-2</span>
+                Find a cloud storage server we can use for our needs
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:55 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13359" rel="13359" data-issuekey="NINEIG-72" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-72" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-72">NINEIG-72</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-12</span>
+                Implement method to change certain colours in page’s css
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:55 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:56 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13358" rel="13358" data-issuekey="NINEIG-71" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-71" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-71">NINEIG-71</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-53</span>
+                Leave space on content pages to display ads of appropriate size
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:54 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:54 AM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13357" rel="13357" data-issuekey="NINEIG-70" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-70" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-70">NINEIG-70</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-8</span>
+                If it doesn’t exist, write one
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Could Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13356" rel="13356" data-issuekey="NINEIG-69" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-69" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-69">NINEIG-69</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-8</span>
+                If algorithm exists, find a way to implement it with system
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Could Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13355" rel="13355" data-issuekey="NINEIG-68" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-68" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-68">NINEIG-68</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-8</span>
+                Research existing algorithms that can perform this task
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Could Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13354" rel="13354" data-issuekey="NINEIG-67" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-67" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-67">NINEIG-67</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-4</span>
+                Create search result page for viewing said content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13353" rel="13353" data-issuekey="NINEIG-66" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-66" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-66">NINEIG-66</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-14</span>
+                Allow user to jump to a page
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13352" rel="13352" data-issuekey="NINEIG-65" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-65" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-65">NINEIG-65</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-4</span>
+                Create and implement search algorithm
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13351" rel="13351" data-issuekey="NINEIG-64" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-64" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-64">NINEIG-64</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-14</span>
+                Allow user to turn one page at a time
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:53 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13350" rel="13350" data-issuekey="NINEIG-63" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-63" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-63">NINEIG-63</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-14</span>
+                Implement method to display one page at a time for streamed books
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eloise Slack - Smith
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:52 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:52 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13349" rel="13349" data-issuekey="NINEIG-62" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-62" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-62">NINEIG-62</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-6</span>
+                Write answers for those Qs
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:52 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:52 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13348" rel="13348" data-issuekey="NINEIG-61" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-61" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-61">NINEIG-61</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-6</span>
+                Write a list of assumed FAQs for our site
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:51 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:51 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13347" rel="13347" data-issuekey="NINEIG-60" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-60" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-60">NINEIG-60</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-6</span>
+                Research other sites’ FAQs
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:51 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:51 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13346" rel="13346" data-issuekey="NINEIG-59" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-59" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-59">NINEIG-59</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-1</span>
+                Write CSS for site
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:49 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:49 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13345" rel="13345" data-issuekey="NINEIG-58" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-58" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-58">NINEIG-58</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-1</span>
+                Build static site content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:48 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:48 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13344" rel="13344" data-issuekey="NINEIG-57" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-57" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-57">NINEIG-57</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-1</span>
+                Create site structure
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:48 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:48 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13343" rel="13343" data-issuekey="NINEIG-56" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-56" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-56">NINEIG-56</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-1</span>
+                Implement bootstrap requirements
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            David Heckenberg
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:45 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:45 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13341" rel="13341" data-issuekey="NINEIG-55" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-55" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-55">NINEIG-55</a>
+</td>
+                                            <td class="summary"><p>
+                Terms &amp; Conditions
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Trivial
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:06 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:57 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13340" rel="13340" data-issuekey="NINEIG-54" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-54" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-54">NINEIG-54</a>
+</td>
+                                            <td class="summary"><p>
+                Sign Up/In/Out
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:04 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:58 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13339" rel="13339" data-issuekey="NINEIG-53" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-53" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-53">NINEIG-53</a>
+</td>
+                                            <td class="summary"><p>
+                Advertising Implementation
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 20/Aug/15 11:03 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:58 PM </td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13262" rel="13262" data-issuekey="NINEIG-44" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-44" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-44">NINEIG-44</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-14</span>
+                Write test cases for turning ebook pages
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Damian Grasso
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 3:45 PM </td>
+                                            <td class="updated"> 19/Aug/15 3:59 PM </td>
+                                            <td class="duedate">    13/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13260" rel="13260" data-issuekey="NINEIG-42" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-42" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-42">NINEIG-42</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-14</span>
+                Implement an animation that allows users to turn the page of an ebook
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Damian Grasso
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 3:45 PM </td>
+                                            <td class="updated"> 19/Aug/15 3:58 PM </td>
+                                            <td class="duedate">    13/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13258" rel="13258" data-issuekey="NINEIG-40" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-40" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-40">NINEIG-40</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-12</span>
+                Write test cases for the feature
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Damian Grasso
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 3:44 PM </td>
+                                            <td class="updated"> 19/Aug/15 3:58 PM </td>
+                                            <td class="duedate">    13/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13257" rel="13257" data-issuekey="NINEIG-39" class="issuerow">
+                                            <td class="issuetype"> Sub-task</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-39" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-39">NINEIG-39</a>
+</td>
+                                            <td class="summary"><p>
+            <span class="parentIssue">NINEIG-12</span>
+                Implement the ability to allow users to change the colour of their media vault
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Damian Grasso
+    </td>
+                                            <td class="priority">   Major
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 3:43 PM </td>
+                                            <td class="updated"> 19/Aug/15 3:57 PM </td>
+                                            <td class="duedate">    13/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13109" rel="13109" data-issuekey="NINEIG-14" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-14" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-14">NINEIG-14</a>
+</td>
+                                            <td class="summary"><p>
+                Turn Book Pages
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Could Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 10:40 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:49 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13108" rel="13108" data-issuekey="NINEIG-13" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-13" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-13">NINEIG-13</a>
+</td>
+                                            <td class="summary"><p>
+                Bookmarking
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 10:38 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:46 PM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13091" rel="13091" data-issuekey="NINEIG-12" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-12" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-12">NINEIG-12</a>
+</td>
+                                            <td class="summary"><p>
+                Customisation
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Could Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 10:05 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13087" rel="13087" data-issuekey="NINEIG-11" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-11" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-11">NINEIG-11</a>
+</td>
+                                            <td class="summary"><p>
+                Admin Privileges
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 10:02 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:59 AM </td>
+                                            <td class="duedate">    21/Oct/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13085" rel="13085" data-issuekey="NINEIG-10" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-10" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-10">NINEIG-10</a>
+</td>
+                                            <td class="summary"><p>
+                Playlists
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 10:00 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:55 AM </td>
+                                            <td class="duedate">    30/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13080" rel="13080" data-issuekey="NINEIG-8" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-8" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-8">NINEIG-8</a>
+</td>
+                                            <td class="summary"><p>
+                Content Suggestions
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Could Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:54 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:13 PM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13079" rel="13079" data-issuekey="NINEIG-7" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-7" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-7">NINEIG-7</a>
+</td>
+                                            <td class="summary"><p>
+                Download Content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:53 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:56 AM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13078" rel="13078" data-issuekey="NINEIG-6" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-6" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-6">NINEIG-6</a>
+</td>
+                                            <td class="summary"><p>
+                App FAQ
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:52 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:42 PM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13077" rel="13077" data-issuekey="NINEIG-5" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-5" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-5">NINEIG-5</a>
+</td>
+                                            <td class="summary"><p>
+                Vault Contents Breakdown
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Should Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:49 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:00 PM </td>
+                                            <td class="duedate">    16/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13073" rel="13073" data-issuekey="NINEIG-4" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-4" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-4">NINEIG-4</a>
+</td>
+                                            <td class="summary"><p>
+                Search Content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:44 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:13 PM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13072" rel="13072" data-issuekey="NINEIG-3" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-3" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-3">NINEIG-3</a>
+</td>
+                                            <td class="summary"><p>
+                Stream Content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:43 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:10 PM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13071" rel="13071" data-issuekey="NINEIG-2" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-2" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-2">NINEIG-2</a>
+</td>
+                                            <td class="summary"><p>
+                Upload Content
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:42 AM </td>
+                                            <td class="updated"> 20/Aug/15 11:54 AM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+
+
+                <tr id="issuerow13070" rel="13070" data-issuekey="NINEIG-1" class="issuerow">
+                                            <td class="issuetype"> Story</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="NINEIG-1" href="https://sefteach01.qut.edu.au/jira/browse/NINEIG-1">NINEIG-1</a>
+</td>
+                                            <td class="summary"><p>
+                App Portability
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Leon Pearce
+    </td>
+                                            <td class="priority">   Must Have
+</td>
+                                            <td class="status">
+                Open
+    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="created"> 19/Aug/15 9:40 AM </td>
+                                            <td class="updated"> 20/Aug/15 12:38 PM </td>
+                                            <td class="duedate">    02/Sep/15
+</td>
+                    </tr>
+                </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="11"><font size="1">
+        Generated at Thu Aug 20 12:59:14 EST 2015 by Leon Pearce using JIRA 6.2.7#6265-sha1:91604a8de81892a3e362e0afee505432f29579b0.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
