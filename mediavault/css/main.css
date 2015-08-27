@@ -1,7 +1,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 500px) {
-   
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -10,14 +10,10 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-    
+
 }
 
 /* Max size */
 @media (min-width: 1200px) {
-    
-}
 
-.row {
-   background-color: yellow;
 }
