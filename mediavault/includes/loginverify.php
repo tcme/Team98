@@ -1,13 +1,8 @@
 <?php
 	session_start();
 	include "../includes/database.php";
-?>
-<!-- Initialises a session with user and connects to database -->
-
-<?php
-	if (!isset($_SESSION['username']))
+	if ($_SESSION['username'] === 'undefined')
 	{
-	header("location:login.php");}
+	header("location:login.php");
+	}
 ?>
-
-<!-- If a user is not registered/logged in, they'll be redirected to login-->

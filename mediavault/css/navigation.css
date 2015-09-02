@@ -3,6 +3,10 @@
     border-radius: 0;
     background-color: #FF5722;
     border-color: #FF5722;
+    height:30;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border: 0px;
 }
 /* title */
 .navbar-default .navbar-brand {

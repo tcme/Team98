@@ -1,4 +1,5 @@
 <?php
+	ob_start();
 	session_start ();
 	include "../includes/database.php";
 ?>
@@ -9,7 +10,7 @@
     $lastname = mysqli_real_escape_string($dbcon, $_POST['lastname']);
 	$username = mysqli_real_escape_string($dbcon, $_POST['username']);
 	$password = mysqli_real_escape_string($dbcon, $_POST['password']);
-	
+
 	if (strlen($password)<8)
 	{
 	$_SESSION["regerr1"]="Password must be a minimum of 8 characters";
@@ -17,12 +18,12 @@
 	exit();
 	}
 	$password = hash('sha256', $password);
-	
+
 	$sql = "SELECT * FROM users WHERE email = '$username'";
 	$result = mysqli_query ($dbcon, $sql) or die (mysqli_error($dbcon));
-	
+
 	$numrow = mysqli_num_rows ($result);
-	
+
 	if($numrow > 0)
 	{
 	$_SESSION["regerr2"]= "Email address already used, please choose another.";
@@ -42,6 +43,6 @@
 	$_SESSION["regsuccess"]="New account created! Please login.";
 	header("location:login.php");
 	}
-	
+
 	mysqli_close($dbcon);
-?> 
+?>
