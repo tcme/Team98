@@ -3,14 +3,12 @@
   width: 100%;
   background-image: url("../images/login_splash.jpg");
   background-size: cover;
-
 }
 
 .center-content {
   display: table;
   width: 100%;
-  height:calc(100% - 50px);;
-
+  height:calc(100% - 50px);
 }
 
 .content-centered {
@@ -22,6 +20,12 @@
 
 #login-form * {
   margin: 4px;
+}
+
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 #login-fields {
