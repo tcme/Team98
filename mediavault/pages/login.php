@@ -27,11 +27,11 @@ include "../includes/navigation.php";
 
 						<div id="login-fields">
 							<label>Email address</label></br>
-							<input type="text" name="username" value="" required="required" autofocus="autofocus"/><br/>
-							<label>Password     </label></br>
-							<input type="password" name="password" value="" required="required" autofocus="autofocus"/><br/>
+							<input type="text" name="username" class="form-control" value="" required="required" autofocus/><br/>
+							<label>Password</label></br>
+							<input type="password" name="password" class="form-control" value="" required="required"/><br/>
 						</div>
-
+						
 						<?php
 						if (isset($_SESSION["regsuccess"]))
 						{
