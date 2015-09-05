@@ -54,12 +54,24 @@ html * {
 .button {
   border: 0;
   border-radius: 2px;
-  color: #2196F3;
+  color: #FF5722;
   background-color: #ECEFF1;
+}
+
+.button:hover {
+  color:#E64A19;
 }
 
 a.button-link:hover{
   text-decoration: none;
+}
+
+a {
+  color:#FF5722;
+}
+
+a:hover {
+  color:#BF360C;
 }
 
 .form-control {
