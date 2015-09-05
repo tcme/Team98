@@ -10,46 +10,46 @@
 </table>
 </nav>
 
-<div id="maincontent4">
+<div class="content">
 	<h1>Search results</h1>
-
+</div>
 <?php
 
     $term = mysqli_real_escape_string($dbcon, $_GET['search']);//prevent SQL injection
-	
+
     $punctuation = array(", ", ". ", ",", ".", ":", ": ", "?");//create an array containing possible punctuation between words
-	
+
 	$term = str_replace($punctuation, " ", $term);//replace punctuation with a space
-	
+
 	$common = array("and", "or", "the", "of");//create an array containing common words that you don't want to search for
-	
+
 	foreach($common as $word)
 	{
 	$term = preg_replace("/\b\s$word\b/i", '', $term);//make the common words case insensitive and replace with no space
 	}
-	
+
 	$term = explode(" ", ($term));//split the search terms into separate word
-	
+
 	$sql1 = "SELECT * FROM blog INNER JOIN category USING (catID) WHERE (postTitle LIKE '%".$term[0]."%' OR postContent LIKE '%".$term[0]."%')"; //searches for matches to first search term
-	
+
 	for($i=1; $i<count($term); $i++)
 	{
 	$sql1 = $sql1."OR (postTitle LIKE '%".$term[$i]."%' OR postContent LIKE '%".$term[$i]."%')"; //searches for matches to subsequent search terms by looping through each additional term
 	}
-	
+
 	$result1 = mysqli_query($dbcon, $sql1) or die(mysqli_error($dbcon)); //run the query
-	$numrow1 = mysqli_num_rows($result1); //count the number of rows returned 
-	
+	$numrow1 = mysqli_num_rows($result1); //count the number of rows returned
+
 	$sql2 = "SELECT * FROM products INNER JOIN prodcat USING (prodCatID) WHERE (name LIKE '%".$term[0]."%' OR description LIKE '%".$term[0]."%')"; //searches for matches to first search term
-	
+
 	for($i=1; $i<count($term); $i++)
 	{
 	$sql2 = $sql2."OR (name LIKE '%".$term[$i]."%' OR description LIKE '%".$term[$i]."%')"; //searches for matches to subsequent search terms by looping through each additional term
 	}
-	
+
 	$result2 = mysqli_query($dbcon, $sql2) or die(mysqli_error($dbcon)); //run the query
 	$numrow2 = mysqli_num_rows($result2); //count the number of rows returned
-	
+
 	if(empty($_GET['search'])) //display if no search term entered
 	{
 	echo "<p>No search term entered.</p>";
@@ -66,7 +66,7 @@
 	{
 	$term = implode(", ", $term); //join the search terms into one string separated by commas
 	echo "<p class='centretext'>Your search for ".$term." has returned <strong>".$numrow1."</strong> results!</p>"; //display the terms and the number of results for the search
-	
+
 		while ($row = mysqli_fetch_array($result1)) //loop through results for each match
 		{
 			echo "<div class='blogSearch'>";
@@ -80,7 +80,7 @@
 	{
 	$term = implode(", ", $term); //join the search terms into one string separated by commas
 	echo "<p class='centretext'>Your search for ".$term." has returned <strong>".$numrow2."</strong> results!</p>"; //display the terms and the number of results for the search
-	
+
 		while ($row = mysqli_fetch_array($result2)) //loop through results for each match
 		{
 			echo "<div class='contact'>";
@@ -97,9 +97,9 @@
 	else
 	{
 	}
-	
+
 	mysqli_close($dbcon);// close the database connection
-?> 
+?>
 </div>
 
 <?php

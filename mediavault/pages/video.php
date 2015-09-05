@@ -8,7 +8,7 @@
 	include "../includes/loginverify.php";
 ?>
 
-<div id="maincontent">
+<div class="content">
 	<h1>Your Videos</h1>
 
 	<?php

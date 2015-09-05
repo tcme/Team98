@@ -5,7 +5,7 @@
   background-color: #FF5722;
 }
 
-/* Links */
+/* links */
 .navbar-default .navbar-nav > li > a {
     color: #FFFFFF;
 }
@@ -16,17 +16,20 @@
     color: #FFFFFF;
 }
 
-/* Navbar collapsed menu button */
-.navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+/* navbar collapsed menu button */
+.navbar-default .navbar-toggle {
   padding: 18 18 18 18;
   border-radius: 0;
   border: 0;
   margin: 0;
-  background-color: #FF5722;
 }
 
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #E64A19;
+}
+
+/* navbar collapsed menu button icon */
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFFFFF;
 }

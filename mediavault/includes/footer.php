@@ -1,9 +1,10 @@
-<!-- footer to be included on every page -->
+<!-- footer to be included on every *page* -->
 
   <!-- CSS stylesheet -->
   <link href="../css/footer.css" rel="stylesheet" type="text/css"/>
 
-  <footer>
+  <footer class="footer">
+
     <!-- Revising Location of search?
     <div class="col-xs-6 col-xs-push-3">
       <form class="searcher" action="search.php" method="GET">
@@ -12,11 +13,10 @@
       </form>
     </div>
     -->
-    <div>
-        <p class="col-xs-12 center-text">
-            &copy; Media Vault Team 2015 - <a class="whiter" href="../pages/policies.php">Privacy and security policy</a>
-        </p>
+    <div class="container">
+      &copy; Media Vault Team 2015 - <a href="../pages/privacypolicy.php">Privacy Policy</a> and <a href="../pages/terms.php">Terms of Use</a>.
     </div>
+
   </footer>
 
 </html>

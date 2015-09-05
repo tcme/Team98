@@ -2,27 +2,27 @@
 <link href="../css/navigation.css" rel="stylesheet" type="text/css" />
 
 <!-- The structure of the navbar *built on bootstrap navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- navbar brand -->
+      <img src="../images/nav_splash.png" alt="media.vlt" height="50px"/>
+      <!-- navbar collapse button -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-  <div class="navbar-header">
-    <!-- navbar brand -->
-    <img src="../images/nav_splash.png" alt="media.vlt" height="50px"/>
-    <!-- navbar collapse button -->
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+    <!-- Holds the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <?php
+        if (isset($_SESSION['username'])){
+          include "../includes/navlists.php";
+        }
+      ?>
+    </div>
   </div>
-
-  <!-- Holds the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <?php
-    if (isset($_SESSION['username'])){
-      include "../includes/navlists.php";
-    }
-    ?>
-  </div>
-
 </nav>

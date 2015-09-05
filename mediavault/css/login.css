@@ -1,41 +1,9 @@
-#screen {
-  height:calc(100% - 50px);
-  width: 100%;
+body {
   background-image: url("../images/login_splash.jpg");
   background-size: cover;
+  color: #FFFFFF;
 }
 
-.center-content {
-  display: table;
-  width: 100%;
-  height:calc(100% - 50px);
-}
-
-.content-centered {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  color: #EEEEEE;
-}
-
-#login-form * {
-  margin: 4px;
-}
-
-.form-control {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-
-#login-fields {
-  display: inline-block;
-  text-align: left;
-}
-
-#submit-button {
-  border: 0;
-  border-radius: 2px;
-  color: #2196F3;
-  background-color: #ECEFF1;
+footer {
+  background-color: rgba(0,0,0,0) !important;
 }
