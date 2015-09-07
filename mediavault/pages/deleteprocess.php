@@ -5,7 +5,7 @@
 
 <?php
 	$name = $_POST['name'];
-	
+		unlink($name);
 		$sql = "DELETE linkandmeta.* FROM linkandmeta WHERE link='$name'";
 		
 		$result = mysqli_query($dbcon, $sql) or die(mysqli_error($dbcon));
