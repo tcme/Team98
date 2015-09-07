@@ -50,6 +50,10 @@ html * {
   vertical-align: middle;
 }
 
+.centered-inner > form, .centered-inner > p{
+  background-color: rgba(0,0,0,0.4);
+}
+
 /*button styles */
 .button {
   border: 0;
@@ -91,4 +95,18 @@ a:hover {
 
 .center-aligned {
   text-align: center;
+}
+
+/*uploads */
+.uploadVisibility{
+	display: none;
+}
+
+.isVisible{
+	display: block;
+}
+
+/* footer */
+footer > .container{
+	text-align: center;
 }

@@ -20,36 +20,52 @@
 		<?php
 				$sql = "SELECT * FROM linkandmeta";
 				$result = mysqli_query($dbcon, $sql)or die(mysqli_error($dbcon));
-				$int_col=1;
 
 				echo "<div id='items' class='row'>";
 				echo "<div class='col-xs-12'>";
-				echo "<p>You currently have <strong>";
-				echo count($row=mysqli_fetch_array($result));
-				echo "</strong> files of this media stored</p>";
-
+				
+				echo "<p>You currently have <strong>";			
+				$counter = 0;
 				while($row=mysqli_fetch_array($result)){
-					if ($int_col ==1){
-
-						echo "<div class='itemRow row'>";
+					if($row["filename"] != ""){
+						$counter++;
 					}
+				}
+				echo ($counter);
+				echo "</strong> files of this media stored</p>";
+				echo "</div>";
+				
+				include "../includes/upload.php";
+
+				$sql = "SELECT * FROM linkandmeta
+						inner join mediatype on linkandmeta.mediaID = mediatype.mediaID";
+				$result = mysqli_query($dbcon, $sql)or die(mysqli_error($dbcon));
+				while($row=mysqli_fetch_array($result)){
 
 					echo "<div class='col-xs-3 itemer'>";
-					echo "<img src='' class='img-responsive' alt='{$row["filename"]}'></img>";
+					echo "<img src='{$row["link"]}' class='img-responsive' alt='{$row["filename"]}'></img>";
 					echo "<div id='deets'>";
-					echo "<p><strong>{$row["filename"]}</strong>{$row["mediavariety"]}</p>";
-					echo"<p><strong>{$row["filesize"]}</strong></p></div>";
+					echo "<p><strong>{$row["filename"]}</strong></p>";
+						
+						$size = $row["filesize"];
+						
+						if ($size < 1000){
+							$size = $size . " KB";
+						}
+						else if ($size >= 1000 && $size < 1000000){
+							$size = $size / 1000 . " MB";
+						}
+						else{
+							$size = $size/1000000 . " GB";
+						}
+						$name = $row["link"];
+					echo"<p><strong>".$size."</strong></p></div>";
+					echo'<form action="deleteprocess.php" method="post" enctype="multipart/form-data"><input type="submit" class="button form-control" value="Delete" onclick="';
+					echo"return confirm('Are you sure you wish to delete this?');";
+					echo'"/>';
+					echo '<input type="hidden" name="name" value="'.$name.'">';
+					echo '</form>';
 					echo "</div>";
-
-
-					if ($int_col ==3){
-
-						echo"</div>";
-						$int_col = 1;
-					}
-					else{
-					$int_col++;
-					}
 
 				}
 
