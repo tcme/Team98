@@ -14,7 +14,7 @@
 		
 		if($result)
 		{
-			$_SESSION['success'] = 'Product deleted successfully!';
+			$_SESSION['success'] = 'Deleted successfully!';
 			header("location:video.php");
 		}
 	
