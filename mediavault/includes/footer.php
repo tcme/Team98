@@ -14,7 +14,8 @@
     </div>
     -->
     <div class="container">
-      &copy; Media Vault Team 2015 - <a href="../pages/privacypolicy.php">Privacy Policy</a> and <a href="../pages/terms.php">Terms of Use</a>.
+      &copy; Media Vault Team 2015 - <a href="../pages/privacypolicy.php">Privacy Policy</a>, <a href="../pages/terms.php">Terms of Use </a> and 
+FAQs <a href ="../pages/faqs.php">FAQs</a>.
     </div>
 
   </footer>

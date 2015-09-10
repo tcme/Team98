@@ -5,8 +5,10 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <!-- navbar brand -->
+      <!-- navbar brand and link to home -->
+      <a href = "../pages/login.php">
       <img src="../images/nav_splash.png" alt="media.vlt" height="50px"/>
+      </a>
       <!-- navbar collapse button -->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="sr-only">Toggle navigation</span>
