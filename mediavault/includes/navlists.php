@@ -8,6 +8,17 @@
 <li><a href='../pages/info.php'>Account Info</a></li>
 </ul>
 
+<form class = "navbar-form navbar-left" role = "search">
+
+	<div class = "form-group">
+	
+		<input type = "text" class = "form-control" name = "search" placeholder = "Search">
+
+	<button class = "btn btn-default" type = "submit" formaction ="search.php" formmethod ="get">Search</button>
+
+	</div>
+</form>
+
 <!-- list of right oriented navigation links -->
 <ul class='nav navbar-nav navbar-right'>
 <li><a href='../pages/logout.php' class='navText'>Logout</a></li>
