@@ -2,10 +2,13 @@ Hey Prakash,
 Inside this document I have provided a few documents that show I am contributing to the project. 
 
 They should be as follows: 
-  1. Portfolio_Task1.png
+  1. Portfolio_Image1.png
   Currently this is on my local repo and on GitHub (although not updated uet), but here I added a searchbar and edited some of    David's dummy code (including editing SQL queries) to make a working search page. I also implemented the inline searchbar to    make it even in the navbar. I will be implementing the collapsed interface soon, which is at this stage in development. 
   
-  2._
+  2. Portfolio_Image2.png
+  Here is the page where users store all their images. At this stage I implemented the queries to gather the user's images, 
+  however in the local testing environment the local repo doesn't show any images. That is David's domain, however it does 
+  link to the images provided, otherwise I wouldn't be able to access that file information. 
   
   3. Portfolio_Image3.png
   Implemented an FAQ page for the website and linked it to the main page (see footer). Eloise will be adding the FAQs to make 
