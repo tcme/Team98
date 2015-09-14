@@ -14,6 +14,8 @@ They should be as follows:
   process of answering common questions quite simple. 
   
   4. info.php
-  
+  At this stage this is the beginning of the visualisation of all important files. At the moment, it grabs the files for the 
+  user and displays them, however I plan to incorporate the javascript in the files listed to visualise those files in a       
+  meaningful way. 
   
   5._
